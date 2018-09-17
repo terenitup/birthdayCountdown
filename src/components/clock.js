@@ -16,6 +16,10 @@ class Clock extends Component {
         }
     }
 
+    componentWillReceiveProps(nextProps) {
+        console.log(`next props: ${JSON.stringify(nextProps)}`)
+    }
+
     getTimeRemaining(birthday) {
         
         var bday = new Date(birthday);
@@ -77,6 +81,10 @@ class Clock extends Component {
             const timeRemaining = this.getTimeRemaining(this.birthday)
             this.setState({ timeRemaining: timeRemaining })
         }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
 
   render() {
