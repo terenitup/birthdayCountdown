@@ -56,10 +56,6 @@ class BirthdayForm extends Component {
                         <a onClick={this.handleGenerate}>Generate Countdown</a>        
                     </div>
             }
-            
-            
-            
-
         </div>
         );
     }
