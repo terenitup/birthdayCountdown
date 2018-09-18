@@ -9,17 +9,21 @@ h1 {
     top: 75px;
 }
 
-@mixin header-background($color: var(--blue-primary), $clip-path: polygon(0 100%, 0 0 , 0 40%, 16% 100%)) {
+@mixin header-background() {
     width: 100vw;
     height: 100vh;
-    background-color: $color;
-    clip-path: $clip-path;
+    // background-color: $color;
+    // clip-path: $clip-path;
 }
 
 .header__skew {
     @include header-background;
+    background-color: var(--blue-primary);
+    clip-path: polygon(0 0, 55% 0, 25% 100%, 0 100%);
 }
 
 .header__subskew {
-    @include header-background(var(--blue-secondary));
+    @include header-background;
+    background-color: var(--blue-secondary);
+    clip-path: polygon(0 100%, 0 32%, 25% 100%);
 }
