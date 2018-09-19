@@ -39,11 +39,6 @@
     @include clock-dimensions;
     @include center-item($pull-y: 0);
     margin-top: 20px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // align-items: center;
-
 }
 
 .message-container__title {
