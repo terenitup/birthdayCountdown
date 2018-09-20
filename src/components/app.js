@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <div className='app'>
         <header>
-          <h1>Birthday Countdown</h1>
+          <h1 className='appTitle'>Birthday Countdown</h1>
           <div className='header__skew'>
             <div className='header__subskew'>
             </div> 
