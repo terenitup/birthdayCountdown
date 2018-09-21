@@ -97,7 +97,7 @@ class Clock extends Component {
             )
         }
         return (
-            <h4>remianing until you are {this.getAge()}</h4>
+            <h4>remaining until you are {this.getAge()}</h4>
         )
     }
 
